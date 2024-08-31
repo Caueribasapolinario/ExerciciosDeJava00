@@ -4,7 +4,7 @@ public class Celular {
     public String marca;
     public String modelo;
     public int capacidadeBateria;
-    public boolean celularLigado;
+    public boolean celularLigado = false;
 
     public Celular(){
 
@@ -14,8 +14,18 @@ public class Celular {
         this.marca = marca;
         this.modelo = modelo;
         this.capacidadeBateria = capacidadeBateria;
-        this.celularLigado = celularLigado;
+
     }
+    public void ligar(){
+        this.celularLigado = true;
+        System.out.println("Ligado");
+    }
+
+    public void Desligar(){
+        this.celularLigado = false;
+        System.out.println("Desligado");
+    }
+
 
     @Override
     public String toString() {

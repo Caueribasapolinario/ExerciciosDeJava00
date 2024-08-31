@@ -1,5 +1,7 @@
 package Exercicio3;
 
+/*Implemente uma classe Pessoa com atributos nome, idade, e altura. Adicione um método que imprime uma apresentação da pessoa.*/
+
 public class Pessoa {
     public String nome;
     public int idade;

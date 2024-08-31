@@ -1,10 +1,12 @@
 package Exercicio6;
 
+/*Crie uma classe Computador com atributos como processador, memoriaRAM, e armazenamento. Adicione métodos para ligar e desligar o computador.*/
 
 public class Computador {
     private String processador;
     private String memoriaRAM;
     private String armazenamento;
+    private boolean StatusPC = false;
 
 
     public Computador(String processador, String memoriaRAM, String armazenamento) {
@@ -12,11 +14,15 @@ public class Computador {
         this.memoriaRAM = memoriaRAM;
         this.armazenamento = armazenamento;
     }
-    public void ligarDesligar(boolean ligar){
-        if(ligar){
-            System.out.println("ligado");
-        }else {
-            System.out.println("desligado");
-        }
+
+    public void ligar(){
+        this.StatusPC = true;
+        System.out.println("PC Ligado");
     }
+
+    public void desligar(){
+        this.StatusPC = false;
+        System.out.println("PC desligado");
+    }
+
 }
